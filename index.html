@@ -3,15 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Jack Kay's Portfolio</title>
+        <script src="/nav.js" defer></script>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-       <div class="nav-container">
-        <div class="social-header">
-            <ul>
+       <header class="primary-header flex">
+        <div class="socials-container">
+            <ul class="social-header flex">
                 <li>
                     <a href="https://github.com/jackkayak" alt="github icon"><img src="/images/Vector.png"></a>
                 </li>
@@ -19,13 +21,15 @@
                     <a href="https://www.linkedin.com/in/jacktkay/" alt="LinkedIn"><img src="/images/Vector copy.png"></a>
                 </li>
                 <li>
-                    <a href="https://www.buymeacoffee.com/jacktkay62" alt="Coffee Icon"><img src="/images/Vector.png"></a>
+                    <a href="https://www.buymeacoffee.com/jacktkay62" alt="Coffee Icon"><img src="/images/bxs_coffee-alt.png"></a>
                 </li>
             </ul>
         </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
         <nav>
-            <ul>
-                <li>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
                     <a href="#">Skills</a>
                 </li>
                 <li>
@@ -42,7 +46,8 @@
                 </li>
             </ul>
         </nav>
-       </div>
+    </header>
+        
        <!------------- End Of Nav Bar ----------------->
 
 
