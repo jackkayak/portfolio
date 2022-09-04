@@ -17,10 +17,11 @@
     --fw-bold: 700;
 }
 
-body {
+body { /* animate background at the end */ 
     background: linear-gradient(178.03deg, #353D4C 1.54%, #71828E 98.34%);
     margin: 0;
     font-family: 'IBM Plex Mono', monospace;
+    color: var(--clr-body);
 
 
     overflow-x: hidden;
@@ -45,6 +46,11 @@ body {
     justify-content: space-between;
 }
 
+.social-header li {
+    padding-right: 2rem;
+}
+
+
 
 
 
@@ -63,12 +69,12 @@ body {
     padding: 0;
     margin: 0;
 
-    background-color: hsl(0 0% 100% / .1);
+    background-color: hsl(208 13% 44% / .1);
 }
 
 @supports (backdrop-filter: blur(1rem)) {
     .primary-navigation {
-        background-color: hsl(0 0% 0% / .6);
+        background-color: hsl(208 13% 44% / .1);
         backdrop-filter: blur(1rem);
     }
 }
@@ -77,6 +83,10 @@ body {
     color: var(--clr-header);
     text-decoration: none;
     font-weight: 500;
+}
+
+.primary-navigation a:hover {
+    color: var(--clr-accent);
 }
 
 
@@ -122,10 +132,118 @@ body {
 
     .primary-navigation {
         --gap: 2rem;
+        background-color: var(--clr-elements);
         padding-block: 2.7rem;
         padding-inline: clamp(1rem, 7vw, 8rem);
     }
+
+
+
+    /* end of nav bar */
 }
+
+
+.hero-container {
+    margin: 2rem 2rem 5rem;
+
+}
+
+
+
+.hero-content h1 {
+    font-size: 2.875rem;
+    font-family: 'Cousine', monospace;
+    font-weight: var(--fw-bold);
+
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    color: var(--clr-body);
+    font-weight: var(--fw-regular);
+    padding-top: .7rem;
+    padding-bottom: 2rem;
+}
+
+.btn-contact {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 10px;
+    background-color: var(--clr-elements);
+    color: var(--clr-body);
+    text-decoration: none;
+}
+
+.resume-link {
+    padding-top: 1.6rem;
+    padding-left: 1rem;
+    letter-spacing: 1px;
+}
+
+.resume-link a {
+    cursor: pointer;
+    color: var(--clr-accent);
+}
+
+.transparentlogo {
+    position: absolute;
+    z-index: -1;
+
+}
+
+@media (min-width: 35em) {
+
+    .hero-content {
+        padding: 4rem;
+        margin-bottom: 14rem;
+    }
+
+    .transparentlogo {
+        left: 429px;
+        top: 173px;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
+ }
+
+
+ /* End of Hero Section */
+
+ .skills {
+    margin: 2rem;
+ }
+
+ .skills-container {
+    text-align: center;
+ }
+
+ .skills-left__content h2 {
+    padding-bottom: 2rem;
+ }
+
+ .skills-blocks {
+    padding: 1rem 0rem;
+    list-style: none;
+    display: grid;
+    gap: 6px;
+    grid-template-columns: repeat(3, 1fr);
+
+
+ }
+
+ .skills-blocks li {
+    padding: 3px 4px;
+    border: 1px solid #fff;
+ }
+
+
+
+
+
+
 
 
 
