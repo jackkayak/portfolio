@@ -12,7 +12,7 @@
     --clr-header: #FFFFFF;
     --clr-body: #DEDEDE;
     --clr-elements: #61707D;
-    --clr-accent: #E97826;
+    --clr-accent: #60992D;
     --fw-regular: 400;
     --fw-bold: 700;
 }
@@ -126,6 +126,7 @@ body { /* animate background at the end */
         background: url(/images/menu-in.svg);
     }
 
+
 }
 
 @media (min-width: 35em) {
@@ -224,20 +225,249 @@ body { /* animate background at the end */
     padding-bottom: 2rem;
  }
 
+
  .skills-blocks {
-    padding: 1rem 0rem;
+    padding: 20px 0px;
+
     list-style: none;
+    justify-content: center;
     display: grid;
-    gap: 6px;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    grid-template-columns: repeat(4, 1fr);
+    
+
+
 
 
  }
 
  .skills-blocks li {
-    padding: 3px 4px;
+    padding: 3px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-header);
+    color: var(--clr-elements);
     border: 1px solid #fff;
+    min-width: fit-content;
  }
+
+ /* end of skills section */ 
+
+
+ .work {
+    margin: 6rem 2rem;
+    text-align: center;
+
+ }
+
+ .notable-grid {
+    padding: 3rem 0rem;
+ } 
+
+ .subtitle {
+    letter-spacing: 3px;
+    color: var(--clr-body);
+ }
+
+ .company {
+    padding: 10px 0px;
+    font-size: 1.5rem;
+ }
+
+ .project-img {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+
+ }
+
+ .btn-link {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 10px;
+    background-color: var(--clr-header);
+    color: var(--clr-elements);
+    text-decoration: none;
+ }
+
+ .project-desc {
+    padding-top: 30px;
+ }
+
+
+ /* end of notable projects */
+.Personal-Projects {
+    place-items: center;
+}
+
+
+ .personal-grid {
+    display: grid;
+    place-items: center;
+    line-height: 1.6;
+}
+
+ 
+.card {
+    color: var(--clr-header);
+    background-image: url(/images/BryceCanyonGraphic-1.png);
+    background-size: cover;
+    padding: 10rem 0 0 ;
+    max-width: 35ch;
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: transform 500ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+    transform: scale(1.05);
+}
+
+.card-content {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(0 0% 0% / .4) 10%,
+        hsl(0 0% 0% / 1)
+    );
+    
+}
+
+.card-title {
+    position: relative;
+    width: max-content;
+    
+}
+
+.card-title::after {
+content: '';
+position: absolute;
+height: 3px;
+left: calc(var(--padding) * -1);
+bottom: 0;
+background-color: var(--clr-accent);
+width: calc(100% + var(--padding));
+transform-origin: left;
+transition: transform 500ms ease;
+}
+
+.card:hover .card-title::after,
+.card:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+ /* lightens font text - kevin powell's trick*/
+.card-body {
+    color: rgb(255, 255, 255 / .85);
+    padding: 5px 0;
+}
+
+@media (hover: hover) {
+    .card-content{
+        transform: translateY(70%);
+    transition: transform 500ms ease;
+    }
+
+    .card:hover .card-content,
+    .card:focus-within .card-content {
+        transform: translateY(0);
+        transition-delay: 500ms;
+    }
+    
+    .card:focus-within .card-content {
+        transition-duration: 0ms;
+    }
+    
+    .card-content > *:not(.card-title) {
+        opacity: 0;
+        transition: opacity 500ms linear;
+    }
+    
+    .card:hover .card-content > *:not(.card-title),
+    .card:focus-within .card-content > *:not(.card-title)                                                                                                                       {
+        opacity: 1;
+        transition-delay: 800ms;
+    }
+
+    .card-title::after {
+        transform: scaleX(0);
+    }
+}
+
+.btn-project {
+    cursor: pointer;
+    display: inline-block;
+    padding: .5em 1.1em;
+    text-decoration: none;
+    color: var(--clr-header);
+    background-color: var(--clr-accent);
+    border-radius: 6px;
+}
+
+.btn-project:hover, 
+.btn-project:focus {
+    background-color: var(--clr-elements);
+}
+
+/* Accesibility for those who do not want motion */
+@media (prefers-reduced-motion: reduce) 
+{
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms
+        !important;
+        animation-iteration-count: 1
+        !important;
+        transition-duration: .01ms
+        !important;
+        scroll-behavior: auto !important;
+        transition-delay: 0ms !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* end of personal projects */
+
+    .contact {
+        margin: 2rem;
+        text-align: center;
+    }
+
+        .contact-container h1 {
+            font-size: 2.875rem;
+            padding-bottom: 10px;
+        }
+
+       
+
+
+ /* end of CTA */
 
 
 
