@@ -298,14 +298,17 @@ body { /* animate background at the end */
 
  /* end of notable projects */
 .Personal-Projects {
-    place-items: center;
+    margin: 0rem 2rem;
+}
+
+.personal-info {
+   padding-left: 1rem;
+   width: 50%;
 }
 
 
  .personal-grid {
-    display: grid;
-    place-items: center;
-    line-height: 1.6;
+    display: flex;
 }
 
  
@@ -319,6 +322,12 @@ body { /* animate background at the end */
     overflow: hidden;
 
     transition: transform 500ms ease;
+}
+
+.card-img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
 .card:hover,
@@ -368,7 +377,7 @@ transition: transform 500ms ease;
 @media (hover: hover) {
     .card-content{
         transform: translateY(70%);
-    transition: transform 500ms ease;
+        transition: transform 500ms ease;
     }
 
     .card:hover .card-content,
