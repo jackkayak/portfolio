@@ -112,7 +112,7 @@ body { /* animate background at the end */
 
     .mobile-nav-toggle {
         display: block;
-        position: absolute;
+        position: fixed;
         z-index: 9999;
         background: url(/images/dashicons_menu-alt.svg);
         background-repeat: no-repeat;
@@ -134,7 +134,7 @@ body { /* animate background at the end */
 
     .primary-navigation {
         --gap: 2rem;
-        background-color: var(--clr-elements);
+        background-color: var(--clr-accenttwo);
         padding-block: 2.7rem;
         padding-inline: clamp(1rem, 7vw, 8rem);
     }
@@ -349,14 +349,35 @@ body { /* animate background at the end */
 }
 
 .personal-info {
-   padding-left: 1rem;
-   width: 50%;
+    text-align: center;
+    padding-top: 1rem;
+   
+}
+
+@media (min-width: 35em) {
+    .personal-grid {
+        display: flex;
+    }
+    
+    .personal-info {
+        display: flex;
+        text-align: left;
+        width: 43%;
+    }
+
+    .personal-info h2 {
+        padding: 0 2rem;
+        color: var(--clr-accenttwo);
+        text-decoration: underline dashed var(--clr-accent);
+    }
+
+    .personal-info p {
+        width: 90%;
+    }
 }
 
 
- .personal-grid {
-    display: flex;
-}
+
  
 .card {
     color: var(--clr-header);
@@ -472,14 +493,14 @@ transition: transform 500ms ease;
         padding: 0rem 4rem;
     }
 
-    .personal-info {
-        width: 40%;
-    }
+    
 
     .main h1 {
         text-align: center;
         font-size: 2.6rem;
     }
+
+    
 }
 
 /* project gallery */
@@ -593,19 +614,6 @@ transition: transform 500ms ease;
     .orange:hover {
         background-color: var(--clr-accent);
     }
-
- 
-
-
-
-
-
-
-
-
-
-
-
 
 /* Accesibility for those who do not want motion */
 @media (prefers-reduced-motion: reduce) 
