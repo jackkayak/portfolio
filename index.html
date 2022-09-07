@@ -30,13 +30,13 @@
         <nav>
             <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
                 <li class="active">
-                    <a href="#">Skills</a>
+                    <a href="#skills">Skills</a>
                 </li>
                 <li>
-                    <a href="#">Work</a>
+                    <a href="#work">Work</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
                 <li>
                     <a href="https://dev.to/jackkayak">Blog</a>
@@ -72,7 +72,7 @@
        <!------------- End Of Hero Section ----------------->
 
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <div class="skills-container">
                 <div class="skills-left">
                     <div class="skills-left__content">
@@ -104,7 +104,8 @@
         <!------------- End Of Skills Section ----------------->
 
 
-        <section class="work">
+        <section id="work" class="work">
+            <div class="notable-margin">
             <h2 class="notable-label">Notable Work</h2>
             <div class="notable-grid">
                 <p class="subtitle">
@@ -120,7 +121,7 @@
                     <li>CSS</li>
                 </ul>
                 <a class="project-img"><img src="/images/Screen Shot 2022-08-09 at 12.57 1.png"></a>
-                <a class="btn-link" href="https://n-brereton-medical.webflow.io/">
+                <a class="btn-contact" href="https://n-brereton-medical.webflow.io/">
                     View Site
                 </a>
                 <p class="project-desc">
@@ -128,6 +129,7 @@
                     Designed full website in Figma, creating 3 live prototypes. 
                     Due to experience cap and time constraints used Webflow cms to create website.
                 </p>
+
             </div>
             <!------------- Notable Project example 01 done ----------------->
 
@@ -145,7 +147,7 @@
                     <li>Communication-heavy</li>
                 </ul>
                 <a class="project-img"><img src="/images/Screen Shot 2022-06-08 at 2.51 1.png"></a>
-                <a class="btn-link" href="#">
+                <a class="btn-contact" href="#">
                     View Prototype
                 </a>
                 <p class="project-desc">
@@ -154,13 +156,14 @@
                      pages using Washington State’s Branding guidelines. 
                 </p>
             </div>
+        </div>
             <!------------- Notable Project example 02 done ----------------->
 
         </section>
         <!------------- End of Notable Works Section ----------------->
 
         <section class="Personal-Projects">
-            
+            <div class="personal">
             <div class="personal-grid">
                 <div class="card" >
                     <!-- want to add image tag here but it is breaking it-->
@@ -176,33 +179,82 @@
                 <p>Here are my day-to-day projects. They range from UI/UX Design to actual front end websites. I have been constantly working on my skills in development and design and hope to land a job.
                 Feel free to check out my work and if you would like to hire me then reach out to me using the button down below.
                 </p>
-                </div>
-
-                
-    
-                <!------------- Still needs to be designed ----------------->
+                </div>    <!------------- Still needs to be designed ----------------->
             </div>
+            <div class="main">
+                <h1>Check out more!</h1>
+                <ul class="photos">
+                    <li class="photos-item">
+                        <div class="photo">
+                            <div class="photo-image">
+                                <img src="/images/2040Flyer2.jpg">
+                            </div>
+                            <div class="photo-content">
+                                <h2 class="photo-title">2040 Flyer</h2>
+                                <p class="photo-text">This was a flyer I made for Pullman's conservation team.</p>
+                                <button class="btn photo-btn">Read More</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="photos-item">
+                        <div class="photo">
+                            <div class="photo-image">
+                                <img src="/images/Screen Shot 2022-06-08 at 2.51 1.png">
+                            </div>
+                            <div class="photo-content">
+                                <h2 class="photo-title">2040 Flyer</h2>
+                                <p class="photo-text">This was a flyer I made for Pullman's conservation team.</p>
+                                <button class="btn photo-btn">Read More</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="photos-item">
+                        <div class="photo">
+                            <div class="photo-image">
+                                <img src="/images/Screen Shot 2022-08-09 at 12.57 1.png">
+                            </div>
+                            <div class="photo-content">
+                                <h2 class="photo-title">2040 Flyer</h2>
+                                <p class="photo-text">This was a flyer I made for Pullman's conservation team.</p>
+                                <button class="btn photo-btn">Read More</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="photos-item">
+                        <div class="photo">
+                            <div class="photo-image">
+                                <img src="/images/green.png">
+                            </div>
+                            <div class="photo-content">
+                                <h2 class="photo-title">2040 Flyer</h2>
+                                <p class="photo-text">This was a flyer I made for Pullman's conservation team.</p>
+                                <button class="btn photo-btn">Read More</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="photos-item">
+                        <div class="photo">
+                            <div class="photo-image">
+                                <img src="/images/DailyTasks.png">
+                            </div>
+                            <div class="photo-content">
+                                <h2 class="photo-title">2040 Flyer</h2>
+                                <p class="photo-text">This was a flyer I made for Pullman's conservation team.</p>
+                                <button class="btn photo-btn">Read More</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
         </section>
         <!------------- End of Personal Projects Section ----------------->
-        
-            
 
-
-
-
-
-
-
-
-
-
-     
-
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="contact-container">
                 <h1>Let's Get In Touch!</h1>
                 
-                    <a class="btn-link" href="mailto:jacktkay6@gmail.com">Contact Me!</a>
+                    <a class="btn-contact orange" href="mailto:jacktkay6@gmail.com">Contact Me!</a>
                 
                
             </div>

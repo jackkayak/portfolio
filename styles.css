@@ -12,7 +12,8 @@
     --clr-header: #FFFFFF;
     --clr-body: #DEDEDE;
     --clr-elements: #61707D;
-    --clr-accent: #60992D;
+    --clr-accent: #E97826;
+    --clr-accenttwo: #1A3249;
     --fw-regular: 400;
     --fw-bold: 700;
 }
@@ -170,9 +171,16 @@ body { /* animate background at the end */
     display: inline-block;
     padding: 14px 30px;
     border-radius: 10px;
-    background-color: var(--clr-elements);
-    color: var(--clr-body);
+    background-color: var(--clr-body);
+    color: black;
     text-decoration: none;
+}
+
+.btn-contact:hover {
+    background-color: var(--clr-accenttwo);
+    transition: 400ms ease;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.25);
+    color: var(--clr-header);
 }
 
 .resume-link {
@@ -214,11 +222,12 @@ body { /* animate background at the end */
  /* End of Hero Section */
 
  .skills {
-    margin: 2rem;
+    background-color: var(--clr-accenttwo);
  }
 
  .skills-container {
     text-align: center;
+    padding: 4rem 2rem;
  }
 
  .skills-left__content h2 {
@@ -252,13 +261,36 @@ body { /* animate background at the end */
     min-width: fit-content;
  }
 
+ @media (min-width: 35em) {
+
+    .skills {
+        padding: 0rem 4rem;
+    }
+    .skills-container {
+        text-align: left;
+        width: 70%;
+    }
+
+
+ }
+
  /* end of skills section */ 
 
 
- .work {
-    margin: 6rem 2rem;
-    text-align: center;
 
+ .work {
+    background-color: #304061;
+
+
+ }
+
+ .notable-margin {
+    margin: 0rem 2rem;
+    text-align: center;
+ }
+
+ .notable-label {
+    padding-top: 2rem;
  }
 
  .notable-grid {
@@ -295,10 +327,25 @@ body { /* animate background at the end */
     padding-top: 30px;
  }
 
+ @media (min-width: 35em) {
+    .notable-margin {
+        padding: 0rem 4rem;
+        text-align: left;
+        width: 70%;
+    }
+
+    
+ }
+
 
  /* end of notable projects */
 .Personal-Projects {
-    margin: 0rem 2rem;
+    background-color: var(--clr-header);
+}
+
+.personal {
+    padding: 4rem 2rem;
+    color: var(--clr-accenttwo);
 }
 
 .personal-info {
@@ -310,7 +357,6 @@ body { /* animate background at the end */
  .personal-grid {
     display: flex;
 }
-
  
 .card {
     color: var(--clr-header);
@@ -418,8 +464,148 @@ transition: transform 500ms ease;
 
 .btn-project:hover, 
 .btn-project:focus {
-    background-color: var(--clr-elements);
+    background-color: var(--clr-accenttwo);
 }
+
+@media (min-width: 35em) {
+    .Personal-Projects {
+        padding: 0rem 4rem;
+    }
+
+    .personal-info {
+        width: 40%;
+    }
+
+    .main h1 {
+        text-align: center;
+        font-size: 2.6rem;
+    }
+}
+
+/* project gallery */
+
+.main {
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+
+.btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+  }
+   .btn:hover {
+    background-color: var(--clr-accent);
+    transition: 400ms ease-in;
+
+  }
+  
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+   .photos-item {
+    display: flex;
+    padding: 1rem;
+  }
+
+  @media (hover: hover) {
+
+.photos-item:hover {
+    transform: scale(1.05);
+    transition: transform 500ms ease;
+}
+
+
+  }
+   @media (min-width: 40rem) {
+    .photos-item {
+      width: 50%;
+    }
+  }
+   @media (min-width: 56rem) {
+    .photos-item {
+      width: 33.3333%;
+    }
+  }
+   .photo {
+    background-color: transparent;
+    border-radius: 0.25rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .photo-image img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+  }
+   .photo-content {
+    padding: 1rem;
+    background: #1A3249;
+  }
+   .photo-title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+  }
+   .photo-text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;   
+    font-weight: 400;
+  }
+
+
+  .contact {
+    width: 100%;
+    text-align: center;
+    background-color: #1A3249;
+    padding: 3rem;
+}
+
+    .contact-container h1 {
+        font-size: 2.875rem;
+        padding-bottom: 10px;
+    }
+
+    .orange {
+        margin: 2rem 0rem;
+    }
+
+    .orange:hover {
+        background-color: var(--clr-accent);
+    }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 /* Accesibility for those who do not want motion */
 @media (prefers-reduced-motion: reduce) 
@@ -463,15 +649,6 @@ transition: transform 500ms ease;
 
  /* end of personal projects */
 
-    .contact {
-        margin: 2rem;
-        text-align: center;
-    }
-
-        .contact-container h1 {
-            font-size: 2.875rem;
-            padding-bottom: 10px;
-        }
 
        
 
