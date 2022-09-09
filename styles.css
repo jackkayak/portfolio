@@ -51,6 +51,10 @@ body { /* animate background at the end */
     padding-right: 2rem;
 }
 
+.social-header li:hover {
+    transform: scale(1.08);
+}
+
 
 
 
@@ -381,8 +385,9 @@ body { /* animate background at the end */
  
 .card {
     color: var(--clr-header);
-    background-image: url(/images/BryceCanyonGraphic-1.png);
+    background-image: url(/images/Slide\ 4_3\ -\ 1.png);
     background-size: cover;
+    background-position: center;
     padding: 10rem 0 0 ;
     max-width: 35ch;
     border-radius: 10px;
@@ -403,7 +408,7 @@ body { /* animate background at the end */
 }
 
 .card-content {
-    --padding: 1.5rem;
+    --padding: 1.9rem;
     padding: var(--padding);
     background: linear-gradient(
         hsl(0 0% 0% / 0),
@@ -526,6 +531,12 @@ transition: transform 500ms ease;
    .btn:hover {
     background-color: var(--clr-accent);
     transition: 400ms ease-in;
+
+  }
+
+  .photo-btn a {
+    color: var(--clr-body);
+    text-decoration: none;
 
   }
   
